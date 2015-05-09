@@ -1,0 +1,23 @@
+{
+  "name": "calcumalate",
+  "version": "0.0.1",
+  "description": "A basic browser calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hctpscl/calcumalate"
+  },
+  "author": "hctpscl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hctpscl/calcumalate/issues"
+  },
+  "homepage": "https://github.com/hctpscl/calcumalate",
+  "devDependencies": {
+    "karma": "^0.12.31",
+    "karma-browserify": "^4.1.2"
+  }
+}
