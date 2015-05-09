@@ -1,8 +1,36 @@
 #calculator {
-	
+	width: 250px;
+	margin: auto;
+	background: #CCC;
+	padding: 5px;
+}
+#numbers,#operators {
+	display: inline-block;
+}
+#operators div {
+	display: block;
+}
+#results {
+	padding: 5px;
+	margin: 5px;
+	height: 15px;
+	background: #FFF;
+	width: 200px;
+	margin: auto;
+}
+#keypad {
+	width: 180px;
+	margin: auto;
 }
 .button {
 	width: 30px;
 	height: 30px;
+	margin: 5px;
 	display: inline-block;
+	border: 1px solid #000;
+	text-align: center;
+	cursor: pointer;
+}
+.button span {
+	vertical-align: -webkit-baseline-middle;
 }
