@@ -1,0 +1,723 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"b",
+				"buttonValue"
+			],
+			[
+				"ha",
+				"handlers"
+			],
+			[
+				"ge",
+				"generateId"
+			],
+			[
+				"tra",
+				"trackedEvents"
+			],
+			[
+				"adde",
+				"addEventListener"
+			],
+			[
+				"eve",
+				"eventsInstance"
+			],
+			[
+				"a",
+				"vertical-align"
+			],
+			[
+				"defa",
+				"defaultMessage"
+			],
+			[
+				"bro",
+				"browserify"
+			],
+			[
+				"brow",
+				"browser"
+			],
+			[
+				"hel",
+				"helloWorldInstance"
+			],
+			[
+				"to",
+				"toHaveBeenCalledWith"
+			],
+			[
+				"he",
+				"helloWorldInstance"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"reque",
+				"requestAgent"
+			],
+			[
+				"agent",
+				"agentId"
+			],
+			[
+				"agen",
+				"agentId"
+			],
+			[
+				"requestA",
+				"requestApp"
+			],
+			[
+				"respo",
+				"responseAgentId"
+			],
+			[
+				"age",
+				"agentFactoryId"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"fu",
+				"fun	Function"
+			],
+			[
+				"requ",
+				"requestDetails"
+			],
+			[
+				"capt",
+				"capturedControls"
+			],
+			[
+				"ag",
+				"agentFactoryId"
+			],
+			[
+				"id",
+				"idleCounter"
+			],
+			[
+				"Mess",
+				"messageManager"
+			],
+			[
+				"dat",
+				"dateUtils"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"event",
+				"event"
+			],
+			[
+				"set",
+				"setItem"
+			],
+			[
+				"ret",
+				"returnString"
+			],
+			[
+				"ifra",
+				"iframeWindow"
+			],
+			[
+				"sto",
+				"storageObject"
+			],
+			[
+				"spli",
+				"splitKey"
+			],
+			[
+				"key",
+				"keyLength"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Test/ButtonTest.js",
+			"settings":
+			{
+				"buffer_size": 542,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "JS/eventEmitter.js",
+			"settings":
+			{
+				"buffer_size": 172,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Test/eventEmitterTest.js",
+			"settings":
+			{
+				"buffer_size": 68,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "node_modules/eslint/bin/eslint.js",
+			"settings":
+			{
+				"buffer_size": 1124,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"selected_items":
+		[
+			[
+				"pull",
+				"Git: Pull Current Branch"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"bra",
+				"Git: Checkout New Branch"
+			],
+			[
+				"pul",
+				"Git: Pull Current Branch"
+			],
+			[
+				"chec",
+				"Git: Checkout"
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"fetch",
+				"Git: Fetch"
+			],
+			[
+				"gitcust",
+				"Git: Custom Command"
+			],
+			[
+				"legit",
+				"SublimeGit: Documentation"
+			],
+			[
+				"cust",
+				"Git: Custom Command"
+			],
+			[
+				"check",
+				"Git: Checkout"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"packlist",
+				"Package Control: List Packages"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"packa rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"git",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 247.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Matthew/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/D/git/calcumalate/package.json",
+		"/D/git/calcumalate/karma.conf.js",
+		"/D/git/calcumalate/index.html",
+		"/D/git/calcumalate/JS/button.js",
+		"/D/git/calcumalate/Test/ButtonTest.js",
+		"/D/git/calcumalate/JS/events.js",
+		"/D/git/calcumalate/Test/EventsTest.js",
+		"/D/git/calcumalate/JS/utils.js",
+		"/D/git/calcumalate/CSS/calculator.css",
+		"/D/git/calcumalate/.gitignore",
+		"/D/git/javascript-challenges-book/book.json",
+		"/D/git/javascript-challenges-book/Gruntfile.js",
+		"/D/git/spawncamping-wookie/Test/helloWorldTest.js",
+		"/D/git/spawncamping-wookie/JS/helloWorld.js",
+		"/D/git/spawncamping-wookie/karma.conf.js",
+		"/D/git/spawncamping-wookie/node_modules/karma-browserify/index.js",
+		"/D/git/spawncamping-wookie/.gitignore",
+		"/Y/Documents/Dev'ing/Testing Framework/index.js",
+		"/C/Users/Matthew/Desktop/page.html",
+		"/C/Users/Matthew/Desktop/style.css",
+		"/C/tfs/Development/ToroRosso/PIB-20250-OverlayProductIdAndURL/VeApps/Development/ClientSide/JS/Shared/Utils/Domain.js",
+		"/C/tfs/Development/ToroRosso/PIB-20250-OverlayProductIdAndURL/VeApps/Development/ClientSide/JS/Iframe/Promote/PromoteApp.js",
+		"/C/tfs/Development/ToroRosso/PIB-20250-OverlayProductIdAndURL/VeApps/Development/ClientSide/Test/PromoteAppTest.js",
+		"/C/tfs/Development/ToroRosso/PIB-20250-OverlayProductIdAndURL/VeApps/Development/ClientSide/JS/Main/Apps/Promote.js",
+		"/C/tfs/Development/ToroRosso/PIB-20250-OverlayProductIdAndURL/VeApps/Development/ClientSide/JS/Main/Apps/App.js",
+		"/C/tfs/Development/Pegasus/PBI-19111-HardCode-AB-Test/VeApps/Development/ClientSide/JS/Main/Apps/Assist.js",
+		"/C/tfs/Development/Pegasus/PBI-19111-HardCode-AB-Test/VeApps/Development/ClientSide/JS/Shared/Classes/IframeStorageProxy.js",
+		"/C/tfs/Development/Pegasus/PBI-19111-HardCode-AB-Test/VeApps/Development/ClientSide/JS/Main/Apps/Agents/CriteriaFilters.js",
+		"/C/tfs/Development/Pegasus/PBI-19111-HardCode-AB-Test/VeApps/Development/ClientSide/JS/Main/Init.js",
+		"/C/tfs/Development/Pegasus/PBI-19111-HardCode-AB-Test/VeApps/Development/ClientSide/JS/Main/Apps/Agents/AgentManager.js",
+		"/C/tfs/Development/Pegasus/PBI-19111-HardCode-AB-Test/VeApps/Development/ClientSide/JS/Main/Apps/App.js",
+		"/C/tfs/Development/Pegasus/PBI-19111-HardCode-AB-Test/VeApps/Development/ClientSide/JS/Shared/Utils/Domain.js",
+		"/C/tfs/Development/Pegasus/PBI-19111-HardCode-AB-Test/VeApps/Development/ClientSide/JS/Shared/Utils/Storage.js",
+		"/C/tfs/Development/Pegasus/PBI-19111-HardCode-AB-Test/VeApps/Development/ClientSide/node_modules/karma/node_modules/log4js/test/categoryFilter-test.js",
+		"/C/Users/Matthew/AppData/Roaming/Sublime Text 2/Packages/JSLint/JSLint.sublime-settings",
+		"/C/Users/Matthew/AppData/Roaming/Sublime Text 2/Packages/User/JSLint.sublime-settings",
+		"/C/Users/Matthew/AppData/Roaming/Sublime Text 2/Packages/User/JavaScript.sublime-settings",
+		"/C/tfs/Development/Pegasus/PBI-19111-HardCode-AB-Test/VeApps/Development/ClientSide/JS/Main/[Finished in 0.1s]",
+		"/Y/Documents/Dev'ing/GitHub/spawncamping-wookie/index.html",
+		"/C/tfs/Development/PBI-15820-LimitAppFires/VeApps/Development/ClientSide/JS/Main/AppState/AppsManagerHeader.js",
+		"/C/tfs/Development/PBI-15820-LimitAppFires/VeApps/Development/ClientSide/JS/Shared/Utils/Event.js",
+		"/C/tfs/Development/PBI-15820-LimitAppFires/VeApps/Development/ClientSide/JS/Shared/Classes/MessageManager.js",
+		"/C/tfs/Development/PBI-15820-LimitAppFires/VeApps/Development/ClientSide/JS/Shared/Utils/Domain.js",
+		"/C/tfs/Development/PBI-15820-LimitAppFires/VeApps/Development/ClientSide/Test/Shared/Utils/TestUtilsGlobal.js",
+		"/C/tfs/Development/PBI-15820-LimitAppFires/VeApps/Development/ClientSide/JS/Shared/Utils/Date.js",
+		"/C/tfs/Development/PBI-15820-LimitAppFires/VeApps/Development/ClientSide/JS/Shared/Classes/LocalStorageProxy.js",
+		"/C/tfs/Development/PBI-15820-LimitAppFires/VeApps/Development/ClientSide/JS/Shared/Classes/IframeStorageProxy.js",
+		"/C/tfs/Development/PBI-15820-LimitAppFires/VeApps/Development/ClientSide/JS/Shared/Utils/Storage.js",
+		"/C/tfs/Development/PBI-15820-LimitAppFires/VeApps/Development/ClientSide/karma.conf.js",
+		"/C/tfs/Development/PBI-15820-LimitAppFires/VeApps/Development/ClientSide/JS/GenieCustomJS/Storage.js",
+		"/Y/Documents/ParentTest.html",
+		"/Y/Documents/ChildTest.html",
+		"/C/Users/Matthew/Desktop/ParentTest.html",
+		"/C/Users/Matthew/Desktop/ChildTest.html",
+		"/Y/Documents/Dev'ing/IframeStorage/karma.conf.js",
+		"/Y/Documents/Dev'ing/IframeStorage/globals.js",
+		"/Y/Documents/Dev'ing/IframeStorage/ObjectUtils.js",
+		"/Y/Documents/Dev'ing/IframeStorage/iframeStorage.js",
+		"/C/tfs/VeLabs/Development/Eagle/PBI-12219-ProactiveByEmail/VeApps/Development/Source/Ve.JavaScript/karma.conf.js",
+		"/Y/Documents/Dev'ing/IframeStorage/test.js",
+		"/C/Users/Matthew/Desktop/iframeManager.js",
+		"/C/Users/Matthew/Desktop/iframeComms.js",
+		"/C/Users/Matthew/AppData/Roaming/Sublime Text 2/Packages/Sublime TFS/sublime_tfs.sublime-settings",
+		"//gatekeeper/wings/Documents/Dev'ing/Work/Js/AppsSharedResources/Conversion.js",
+		"/Y/Documents/Dev'ing/Javascript Strings Test/testScript-Matt.js",
+		"/C/Users/Matthew/AppData/Roaming/Sublime Text 2/Packages/CTags/Default.sublime-keymap",
+		"//gatekeeper/wings/Documents/Dev'ing/Work/Js/CaptureApps/Utils/Dom.js",
+		"/C/Users/Matthew/AppData/Roaming/Sublime Text 2/Packages/CTags/CTags.sublime-settings",
+		"/C/Users/Matthew/AppData/Roaming/Sublime Text 2/Packages/User/sublime_tfs.sublime-settings",
+		"/C/Users/Matthew/Desktop/storageListener.js",
+		"/C/Users/Matthew/Desktop/iframeStorage.js",
+		"/C/Users/Matthew/Desktop/mainPageStorage.js",
+		"/C/Users/Matthew/Desktop/iframeStorage.js."
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"D:\\git\\spawncamping-wookie\\node_modules",
+			"C:\\tfs\\Development\\Pegasus\\PBI-19111-HardCode-AB-Test\\VeApps\\Development\\ClientSide\\JS"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"addEvent",
+			"fakeElement",
+			"my event",
+			"button\">",
+			"\"button\">",
+			" class=\"row\"",
+			"button",
+			".framework",
+			"require('bro')",
+			"requestApp",
+			"processActiveAgent",
+			"agents[",
+			"disabledAgents",
+			"getCustomOptions",
+			"DisabledAgents",
+			"disabledAgents",
+			"removeDisabledAgents",
+			"buildUrlInformation",
+			"criteriaManager",
+			"criteriaFilter",
+			"IframeStorageProxy",
+			"new classes.AgentManager",
+			"new AgentManager",
+			"agentId",
+			"Utils.",
+			"STORE"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"agentFactoryId"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Test/ButtonTest.js",
+					"settings":
+					{
+						"buffer_size": 542,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								527,
+								527
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "JS/eventEmitter.js",
+					"settings":
+					{
+						"buffer_size": 172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								166
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Test/eventEmitterTest.js",
+					"settings":
+					{
+						"buffer_size": 68,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								61,
+								61
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "node_modules/eslint/bin/eslint.js",
+					"settings":
+					{
+						"buffer_size": 1124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								490,
+								490
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"output.git-checkout":
+	{
+		"height": 100.0
+	},
+	"output.git-commit":
+	{
+		"height": 100.0
+	},
+	"output.git-fetch":
+	{
+		"height": 100.0
+	},
+	"output.git-pull":
+	{
+		"height": 240.0
+	},
+	"output.git-push":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"kar",
+				"karma.conf.js"
+			],
+			[
+				"gru",
+				"Gruntfile.js"
+			],
+			[
+				"domain",
+				"JS/Shared/Utils/Domain.js"
+			],
+			[
+				"app.",
+				"JS/Main/Apps/App.js"
+			],
+			[
+				"proap",
+				"JS/Iframe/Promote/PromoteApp.js"
+			],
+			[
+				"prap",
+				"Test/PromoteAppTest.js"
+			],
+			[
+				"promo",
+				"JS/Main/Apps/Promote.js"
+			],
+			[
+				"assist",
+				"JS/Main/Apps/Assist.js"
+			],
+			[
+				"ifsp",
+				"JS/Shared/Classes/IframeStorageProxy.js"
+			],
+			[
+				"cft",
+				"Test/Main/Apps/Agents/CriteriaFiltersTest.js"
+			],
+			[
+				"criter",
+				"JS/Main/Apps/Agents/CriteriaFilters.js"
+			],
+			[
+				"agmt",
+				"Test/Main/Apps/Agents/AgentManagerTest.js"
+			],
+			[
+				"amt",
+				"Test/Shared/Classes/ApiManagerTest.js"
+			],
+			[
+				"iframstop",
+				"JS/Shared/Classes/IframeStorageProxy.js"
+			],
+			[
+				"agentm",
+				"JS/Main/Apps/Agents/AgentManager.js"
+			],
+			[
+				"apps",
+				"JS/Main/AppState/AppsManagerHeader.js"
+			],
+			[
+				"testg",
+				"Test/Shared/Utils/TestUtilsGlobal.js"
+			],
+			[
+				"storaget",
+				"Test/Shared/Utils/StorageTest.js"
+			],
+			[
+				"stor",
+				"JS/Shared/Utils/Storage.js"
+			],
+			[
+				"stora",
+				"JS/GenieCustomJS/Storage.js"
+			],
+			[
+				"",
+				"karma.conf.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true
+}

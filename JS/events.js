@@ -1,6 +1,8 @@
 (function () {
 	'use strict';
 
+	var EventEmitter = require('./eventEmitter');
+
 	function Events () {
 
 	}

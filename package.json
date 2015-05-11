@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hctpscl/calcumalate",
   "devDependencies": {
+    "grunt-eslint": "^13.0.0",
     "karma": "^0.12.31",
     "karma-browserify": "^4.1.2"
   }

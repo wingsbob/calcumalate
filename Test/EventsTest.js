@@ -2,14 +2,20 @@
 	'use strict';
 
 	var proxyquire = require('proxyquire'),
+		fakeEventEmitter = jasmine.createSpy(),
 		fakeUtils = {},
 		Events = proxyquire('../Events', {
 			'./utils': fakeUtils,
+			'./eventEmitter': fakeEventEmitter,
 			'@noCallThru': true
 		}),
 		eventsInstance;
 
 	describe('Events', function () {
+		afterEach(function () {
+			fakeEventEmitter.calls.reset();
+		});
+
 		describe('constructor', function () {
 			it('should create an empty handlers object', function () {
 				eventsInstance = new Events();
@@ -23,8 +29,9 @@
 			});
 		});
 
-		describe('addEvent', function () {
+		describe('on', function () {
 			var fakeElement,
+				fakeEventEmitterInstance,
 				fakeListener;
 
 			beforeEach(function () {
@@ -34,6 +41,10 @@
 				fakeListener = {
 					handleEvent: jasmine.createSpy()
 				};
+				fakeEventEmitterInstance = {
+					on: jasmine.createSpy()
+				};
+				fakeEventEmitter.and.returnValue(fakeEventEmitterInstance);
 				eventsInstance = new Events();
 				spyOn(window, 'addEventListener');
 				fakeUtils.generateId = jasmine.createSpy().and.returnValue('unique id');
@@ -43,29 +54,64 @@
 			});
 
 			it('should add itself as an event listener on the window for the named event', function () {
-				eventsInstance.addEvent('my-event', fakeElement, fakeListener);
+				eventsInstance.on('my-event', fakeElement, fakeListener);
 
 				expect(window.addEventListener).toHaveBeenCalledWith('my-event', eventsInstance);
 			});
 			it('should record that it is now tracking the stated event', function () {
-				eventsInstance.addEvent('my-event', fakeElement, fakeListener);
+				eventsInstance.on('my-event', fakeElement, fakeListener);
 
 				expect(eventsInstance.trackedEvents).toContain('my-event');
 			});
-			it('should generate a unique id for the event', function () {
-				eventsInstance.addEvent('my-event', fakeElement, fakeListener);
+			it('should generate a unique id for the element if none already exists', function () {
+				eventsInstance.on('my-event', fakeElement, fakeListener);
 
 				expect(fakeUtils.generateId).toHaveBeenCalledWith();
 			});
-			it('should bind the handler to the element with the unique id', function () {
-				eventsInstance.addEvent('my-event', fakeElement, fakeListener);
+			it('should not generate a unique id for the element if one already exists', function () {
+				fakeElement.dataset.elementId = 'some existing id';
+				eventsInstance.on('my-event', fakeElement, fakeListener);
 
-				expect(fakeElement.dataset['my-event']).toEqual('unique id');
+				expect(fakeUtils.generateId).not.toHaveBeenCalledWith();
 			});
-			it('should store the handler with the unique id and event type', function () {
-				eventsInstance.addEvent('my-event', fakeElement, fakeListener);
-				
-				expect(eventsInstance.handlers).toEqual(jasmine.objectContaining({'my-event.unique id': fakeListener}));
+			it('should bind the handler to the element with the unique id', function () {
+				eventsInstance.on('my-event', fakeElement, fakeListener);
+
+				expect(fakeElement.dataset.elementId).toEqual('unique id');
+			});
+			describe('when there is no existing eventEmitter for that element', function () {
+				it('should create a new eventEmitter if none exists for that element id', function () {
+					eventsInstance.on('my-event', fakeElement, fakeListener);
+
+					expect(fakeEventEmitter).toHaveBeenCalledWith();
+				});
+				it('should register an event with the new events emitter', function () {
+					eventsInstance.on('my-event', fakeElement, fakeListener);
+
+					expect(fakeEventEmitterInstance.on).toHaveBeenCalledWith('my-event', fakeListener)
+				});
+				it('should store the events emitter under the elementId', function () {
+					eventsInstance.on('my-event', fakeElement, fakeListener);
+					
+					expect(eventsInstance.handlers).toEqual(jasmine.objectContaining({'my-event': fakeEventEmitterInstance}));
+				});
+			});
+			describe('when there is an existing eventEmitter for that element', function () {
+				beforeEach(function () {
+					fakeElement.dataset.elementId = 'existingId';
+					fakeElement.handlers.existingId = {on: jasmine.createSpy()};
+				});
+
+				it('should not create a new eventEmitter if one already exists for that element id', function () {
+					eventsInstance.on('my-event', fakeElement, fakeListener);
+
+					expect(fakeEventEmitter).not.toHaveBeenCalledWith();
+				});
+				it('should register an event with the existing emitter', function () {
+					eventsInstance.on('my-event', fakeElement, fakeListener);
+
+					expect(fakeElement.handlers.existingId).toHaveBeenCalledWith('my-event', fakeListener);
+				});
 			});
 		});
 
