@@ -2,39 +2,79 @@
 <html>
 <head>
 	<title>calcumalator</title>
-	<link rel="stylesheet" type="text/css" href="CSS/calculator.css">
+    <link rel="stylesheet" type="text/css" href="CSS/calculator.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 </head>
 <body>
-	<div id="wrapper">
-		<div id="calculator">
-			<div id="results"></div>
-			<div id="keypad">
-				<div id="numbers">
-					<div>
-						<div class="button"><span>1</span></div>
-						<div class="button"><span>2</span></div>
-						<div class="button"><span>3</span></div>
-					</div>
-					<div>
-						<div class="button"><span>4</span></div>
-						<div class="button"><span>5</span></div>
-						<div class="button"><span>6</span></div>
-					</div>
-					<div>
-						<div class="button"><span>7</span></div>
-						<div class="button"><span>8</span></div>
-						<div class="button"><span>9</span></div>
-					</div>
-				</div>
-				<div id="operators">
-					<div class="button"><span>/</span></div>
-					<div class="button"><span>*</span></div>
-					<div class="button"><span>+</span></div>
-					<div class="button"><span>-</span></div>
-					<div class="button"><span>=</span></div>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="container">
+    <div class="row">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="calculator-screen" class="uneditable-input"></div>
+                </div>
+                <div class="col-md-1" style="font-size: 42px; line-height: 46px; text-align: center;">
+                    =
+                </div>
+                <div class="col-md-3">
+                    <div id="calculator-result" class="uneditable-input">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="row">
+                <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+                    <a href="#" class="btn btn-default" role="button" data-constant="SIN">sin</a>
+                    <a href="#" class="btn btn-default" role="button" data-constant="COS">cos</a>
+                    <a href="#" class="btn btn-default" role="button" data-constant="MOD">md</a>
+                    <a href="#" class="btn btn-danger" role="button" data-method="reset">C</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+                    <a href="#" class="btn btn-default" role="button">7</a>
+                    <a href="#" class="btn btn-default" role="button">8</a>
+                    <a href="#" class="btn btn-default" role="button">9</a>
+                    <a href="#" class="btn btn-default" role="button" data-constant="BRO">(</a>
+                    <a href="#" class="btn btn-default" role="button" data-constant="BRC">)</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+                    <a href="#" class="btn btn-default" role="button">4</a>
+                    <a href="#" class="btn btn-default" role="button">5</a>
+                    <a href="#" class="btn btn-default" role="button">6</a>
+                    <a href="#" class="btn btn-default" role="button" data-constant="MIN">-</a>
+                    <a href="#" class="btn btn-default" role="button" data-constant="SUM">+</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+                    <a href="#" class="btn btn-default" role="button">1</a>
+                    <a href="#" class="btn btn-default" role="button">2</a>
+                    <a href="#" class="btn btn-default" role="button">3</a>
+                    <a href="#" class="btn btn-default" role="button" data-constant="DIV">/</a>
+                    <a href="#" class="btn btn-default" role="button" data-constant="MULT">*</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+                    <a href="#" class="btn btn-default" role="button">.</a>
+                    <a href="#" class="btn btn-default" role="button">0</a>
+                    <a href="#" class="btn btn-default" role="button" data-constant="PROC">%</a>
+                    <a href="#" class="btn btn-primary" role="button" data-method="calculate">=</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <h3 class="page-header">History</h3>
+        </div>
+    </div>
+</div>
 </body>
 </html>
