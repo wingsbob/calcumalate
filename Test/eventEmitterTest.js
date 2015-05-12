@@ -44,7 +44,28 @@
 		});
 
 		describe('emit', function () {
-			
+			var firstListener,
+				secondListener;
+
+			beforeEach(function () {
+				firstListener = jasmine.createSpy();
+				secondListener = jasmine.createSpy();
+				eventEmitterInstance = new EventEmitter();
+				eventEmitterInstance.events.click = [firstListener, secondListener];
+			});
+
+			it('should call all the listeners for an event, passing the provided arguments', function () {
+				eventEmitterInstance.emit('click', 'first argument', 'second argument');
+
+				expect(firstListener).toHaveBeenCalledWith('first argument', 'second argument');
+				expect(secondListener).toHaveBeenCalledWith('first argument', 'second argument');
+			});
+			it('should return true if at least 1 listener was called', function () {
+				expect(eventEmitterInstance.emit('click')).toEqual(true);
+			});
+			it('should return false if no listener was called', function () {
+				expect(eventEmitterInstance.emit('move')).toEqual(false);
+			});
 		});
 	});
 
