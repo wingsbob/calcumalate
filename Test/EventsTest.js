@@ -4,7 +4,7 @@
 	var proxyquire = require('proxyquire'),
 		fakeEventEmitter = jasmine.createSpy(),
 		fakeUtils = {},
-		Events = proxyquire('../Events', {
+		Events = proxyquire('../JS/Events', {
 			'./utils': fakeUtils,
 			'./eventEmitter': fakeEventEmitter,
 			'@noCallThru': true
@@ -56,7 +56,7 @@
 			it('should add itself as an event listener on the window for the named event', function () {
 				eventsInstance.on('my-event', fakeElement, fakeListener);
 
-				expect(window.addEventListener).toHaveBeenCalledWith('my-event', eventsInstance);
+				expect(window.addEventListener).toHaveBeenCalledWith('my-event', eventsInstance, true);
 			});
 			it('should record that it is now tracking the stated event', function () {
 				eventsInstance.on('my-event', fakeElement, fakeListener);
@@ -91,15 +91,16 @@
 					expect(fakeEventEmitterInstance.on).toHaveBeenCalledWith('my-event', fakeListener)
 				});
 				it('should store the events emitter under the elementId', function () {
+					fakeUtils.generateId.and.returnValue('element id');
 					eventsInstance.on('my-event', fakeElement, fakeListener);
 					
-					expect(eventsInstance.handlers).toEqual(jasmine.objectContaining({'my-event': fakeEventEmitterInstance}));
+					expect(eventsInstance.handlers).toEqual(jasmine.objectContaining({'element id': fakeEventEmitterInstance}));
 				});
 			});
 			describe('when there is an existing eventEmitter for that element', function () {
 				beforeEach(function () {
 					fakeElement.dataset.elementId = 'existingId';
-					fakeElement.handlers.existingId = {on: jasmine.createSpy()};
+					eventsInstance.handlers.existingId = {on: jasmine.createSpy()};
 				});
 
 				it('should not create a new eventEmitter if one already exists for that element id', function () {
@@ -110,7 +111,7 @@
 				it('should register an event with the existing emitter', function () {
 					eventsInstance.on('my-event', fakeElement, fakeListener);
 
-					expect(fakeElement.handlers.existingId).toHaveBeenCalledWith('my-event', fakeListener);
+					expect(eventsInstance.handlers.existingId.on).toHaveBeenCalledWith('my-event', fakeListener);
 				});
 			});
 		});
