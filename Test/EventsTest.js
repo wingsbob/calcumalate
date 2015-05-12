@@ -116,6 +116,9 @@
 		});
 
 		describe('handleEvent', function () {
+			beforeEach(function () {
+				eventsInstance = new Events();
+			});
 			//Traverse DOM to find elements with the data attribute which matches the event type for a listener
 			//Runs relevant code, then continues traversing the tree until we reach the window
 		});
